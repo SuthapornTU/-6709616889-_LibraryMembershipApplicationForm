@@ -1,0 +1,57 @@
+body {
+    height: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #e7a61a;
+}
+
+
+.container {
+    background-color: white;
+    padding: 10%;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 600px;
+}
+
+
+input {
+    padding: 8px;
+    margin: 0%;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.user-details input{
+    width: 95%;
+    border-radius: 25px;
+    border-color: rgb(183, 193, 193);
+    background-color: rgba(233, 234, 234, 0.525);
+    border-width: 1px;
+}
+
+select {
+    padding: 8px;
+    margin: 0%;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
