@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Membership Application Form</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <div class="container">
+    <h1>Register Library Membership</h1>
+    <form>       
+        <div class="user-details">
+            <label for="th_name">ชื่อ :</label> <br>
+            <input type="text" id="th_name" name="th_name" pattern="[ก-๙]+" required><br>
+
+            <label for="th_surname">นามสกุล :</label><br>
+            <input type="text" id="th_surname" name="th_surname" pattern="[ก-๙]+" required><br>
+
+            <label for="el_name">Name :</label><br>
+            <input type="text" id="el_name" name="el_name" pattern="[A-Z]+" required><br>
+
+            <label for="el_surname">Surname :</label><br>
+            <input type="text" id="el_surname" name="el_surname" pattern="[A-Z]+" required><br>
+
+            <label for="ID">Student ID :</label><br>
+            <input type="text" id="ID" name="ID" pattern="[0-9]{10}" required><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required><br>
+        </div>
+
+        <br>
+        <label for="faculty">Faculty :</label><br>
+        <select name="faculty" id="Faculty-select" required>
+            <option value="" disabled selected>-- Please choose an option --</option>
+            <option value="LAW">คณะนิติศาสตร์</option>
+            <option value="CCA">คณะพาณิชยศาสตร์และการบัญชี</option>
+            <option value="POL_SCI">คณะรัฐศาสตร์</option>
+            <option value="ECO">คณะเศรษฐศาสตร์</option>
+            <option value="SWK">คณะสังคมสงเคราะห์ศาสตร์</option>
+            <option value="ARTS">คณะศิลปศาสตร์</option>
+            <option value="JCM">คณะวารสารศาสตร์และสื่อสารมวลชน</option>
+            <option value="SOC_ANTH">คณะสังคมวิทยาและมานุษยวิทยา</option>
+            <option value="SCT">คณะวิทยาศาสตร์และเทคโนโลยี</option>
+            <option value="ENG">คณะวิศวกรรมศาสตร์</option>
+            <option value="MED">คณะแพทยศาสตร์</option>
+            <option value="AHS">คณะสหเวชศาสตร์</option>
+            <option value="DENT">คณะทันตแพทยศาสตร์</option>
+            <option value="NUR">คณะพยาบาลศาสตร์</option>
+            <option value="FA">คณะศิลปกรรมศาสตร์</option>
+            <option value="ARCH_UP">คณะสถาปัตยกรรมศาสตร์และการผังเมือง</option>
+            <option value="PH">คณะสาธารณสุขศาสตร์</option>
+            <option value="PHARM">คณะเภสัชศาสตร์</option>
+        </select>
+        <br><br>
+
+        <label for="gender">Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label>
+        
+        <br><br>
+
+        
+        <label for="date">Date of Birth :</label> <br>
+        <input type="date" id="date" name="date" required>
+        <br><br>
+
+    
+        <label for="genre">What type of book are you interested in? :</label><br>
+        <select name="genre" id="genre-select" >
+            <option value="">-- Please choose an option --</option>
+            <option value="fantasy">Fantasy</option>
+            <option value="science-fiction">Science Fiction</option>
+            <option value="romance">Romance</option>
+            <option value="mystery">Mystery</option>
+            <option value="thriller">Thriller</option>
+            <option value="historical-fiction">Historical Fiction</option>
+            <option value="young-adult">Young Adult</option>
+            <option value="action-adventure">Action & Adventure</option>
+            <option value="dystopian">Dystopian</option>
+            <option value="contemporary-fiction">Contemporary Fiction</option>
+        </select>
+
+        <br><br>
+            <input type="checkbox" id="agreement" name="agreement" value="yes">
+            <label for="updates">Would you like to receive notifications for the latest news and updates?</label>
+        <br><br>
+        <input type="submit" value="Register">
+
+    </form>
+    </div>
+</body>
+</html>
